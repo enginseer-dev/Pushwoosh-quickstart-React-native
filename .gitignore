@@ -1,33 +1,74 @@
-# Gradle files
-.gradle/
-build/
+# Dependencies
+/node_modules
 
-# Local configuration file (sdk path, etc)
-local.properties
+# Generated files
+ios/build
+android/build
+android/app/build
 
-# Log/OS Files
+# OS files
+.DS_Store
+*.swp
+*.swo
+*.tmp
+*.bak
+*.sublime*
+*.idea
+*.vscode
+*.history
+
+# Logs
+logs
 *.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 
-# Android Studio generated files and folders
-captures/
-.externalNativeBuild/
-.cxx/
-*.apk
-output.json
+# Others
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
 
-# IntelliJ
-*.iml
-.idea/
-misc.xml
-deploymentTargetDropDown.xml
-render.experimental.xml
-
-# Keystore files
-*.jks
+# Secrets
+*.pem
+*.key
 *.keystore
+*.jks
 
-# Google Services (e.g. APIs or Firebase)
-google-services.json
+# Fastlane
+**/fastlane/report.xml
+**/fastlane/Preview.html
+**/fastlane/screenshots
+**/fastlane/test_output
 
-# Android Profiling
-*.hprof
+# Bundle artifact
+*.jsbundle
+
+# Detox
+detox
+artifacts/
+
+# Yarn
+.yarn/*
+!.yarn/cache
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+.pnp.*
+
+# Metro bundler cache
+metro-cache
+
+# Storybook
+storybook-static
+
+# Babel cache
+babel-cache
+
+# Jest
+/jest
+coverage
